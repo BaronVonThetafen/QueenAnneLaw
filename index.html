@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Queen Anne Law | Estate Planning & Probate Attorney in Queen Anne Seattle</title>
+  <meta name="description" content="Queen Anne Law helps individuals, couples, and families in Queen Anne Seattle with wills, trusts, probate, estate planning, powers of attorney, and related services. Book an initial consultation today." />
+  <meta name="keywords" content="Queen Anne estate planning attorney, Seattle probate attorney, wills lawyer Queen Anne Seattle, trusts and estates Seattle, probate lawyer Queen Anne, power of attorney Seattle, estate planning Seattle" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Queen Anne Law" />
+  <meta property="og:title" content="Queen Anne Law | Estate Planning & Probate in Queen Anne Seattle" />
+  <meta property="og:description" content="Minimalist estate planning and probate services for individuals, couples, and families in Queen Anne Seattle. Wills, trusts, probate, and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero-consultation.png" />
+  <meta name="theme-color" content="#f7f4ef" />
+  <link rel="canonical" href="https://queenannelaw.com/" />
+
+  <link rel="icon" type="image/x-icon" href="assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --surface: #fffdfa;
+      --text: #1f1f1c;
+      --muted: #666256;
+      --line: #ddd6ca;
+      --accent: #5b4a7c;
+      --accent-dark: #45355f;
+      --max: 1120px;
+      --radius: 18px;
+      --shadow: 0 12px 40px rgba(21, 18, 14, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(calc(100% - 2rem), var(--max)); margin: 0 auto; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.9rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.85rem 1.2rem;
+      border-radius: 999px;
+      font-size: 1rem;
+      border: 1px solid transparent;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+    }
+    .btn-primary:hover { background: var(--accent-dark); }
+    .btn-secondary {
+      background: transparent;
+      border-color: var(--line);
+    }
+    .btn-secondary:hover {
+      background: rgba(91, 74, 124, 0.05);
+      border-color: var(--accent);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(247, 244, 239, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(221, 214, 202, 0.7);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.9rem 0;
+      gap: 1rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      font-weight: 700;
+    }
+    .brand img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      padding: 3rem 0 2rem;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.95fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 4.4rem);
+      line-height: 1.05;
+      margin: 0 0 1rem;
+      font-weight: 600;
+    }
+    .hero p.lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 58ch;
+      margin-bottom: 1.4rem;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+    .microcopy {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .hero-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 460px;
+    }
+
+    .section {
+      padding: 3.5rem 0;
+    }
+    .section h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      line-height: 1.15;
+      margin: 0 0 0.8rem;
+      font-weight: 600;
+    }
+    .section-intro {
+      max-width: 62ch;
+      color: var(--muted);
+      margin-bottom: 1.6rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.35rem;
+      box-shadow: 0 6px 20px rgba(21, 18, 14, 0.04);
+    }
+    .card h3 {
+      margin: 0 0 0.6rem;
+      font-size: 1.15rem;
+    }
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    .checklist {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--muted);
+    }
+    .checklist li + li { margin-top: 0.45rem; }
+
+    .consultation {
+      background: linear-gradient(180deg, rgba(255,253,250,0.85), rgba(255,253,250,1));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .consult-grid {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .portrait {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .price-box {
+      display: inline-flex;
+      gap: 0.75rem;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin: 1rem 0;
+      padding: 0.9rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--surface);
+    }
+    .price {
+      font-size: 2rem;
+      line-height: 1;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .strike {
+      color: var(--muted);
+      text-decoration: line-through;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.85rem;
+      margin-top: 1.3rem;
+    }
+    label {
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 0.35rem;
+    }
+    .full { grid-column: 1 / -1; }
+    input, textarea {
+      width: 100%;
+      padding: 0.9rem 0.95rem;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: white;
+      font: inherit;
+      color: var(--text);
+    }
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .form-note {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.7rem;
+    }
+
+    footer {
+      padding: 2rem 0 3rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--line);
+      padding-top: 1.25rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid, .consult-grid, .split, .cards {
+        grid-template-columns: 1fr;
+      }
+      .hero-card img {
+        min-height: 320px;
+      }
+      .consult-grid {
+        align-items: start;
+      }
+    }
+    @media (max-width: 720px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      form {
+        grid-template-columns: 1fr;
+      }
+      .hero {
+        padding-top: 2rem;
+      }
+      .hero h1 {
+        font-size: clamp(2.1rem, 10vw, 3rem);
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Queen Anne Law",
+    "url": "https://queenannelaw.com/",
+    "image": "assets/images/ruth-headshot.jpg",
+    "description": "Estate planning and probate legal services in Queen Anne Seattle, including wills, trusts, probate, powers of attorney, and related estate matters.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Seattle"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Seattle",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "serviceType": [
+      "Estate planning",
+      "Wills",
+      "Trusts",
+      "Probate",
+      "Powers of attorney",
+      "Advance directives"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="#" class="brand">
+        <img src="assets/favicons/favicon-32x32.png" alt="Queen Anne Law logo" />
+        <span>Queen Anne Law</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#why-queen-anne">Why Us</a>
+        <a href="#consultation">Consultation</a>
+        <a href="#consultation" class="btn btn-primary">Book Initial Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Estate Planning & Probate in Queen Anne Seattle</span>
+          <h1>Wills, trusts, probate, and estate planning guidance for Seattle families.</h1>
+          <p class="lead">
+            Queen Anne Law helps individuals, couples, and families in the Queen Anne area create estate plans tailored to their needs, protect their loved ones, and navigate deaths in the family with compassion and support.
+          </p>
+          <div class="hero-actions">
+            <a href="#consultation" class="btn btn-primary">Schedule an Initial Consultation</a>
+            <a href="#services" class="btn btn-secondary">Explore Services</a>
+          </div>
+          <p class="microcopy">
+            Serving individuals and families seeking an estate planning attorney or probate lawyer in Queen Anne, Seattle.
+          </p>
+        </div>
+        <div class="hero-card">
+          <img src="assets/images/hero-consultation.png" alt="Estate planning consultation in a welcoming Queen Anne Seattle law office" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <span class="eyebrow">Services</span>
+        <h2>Estate planning and probate services tailored to real life.</h2>
+        <p class="section-intro">
+          Whether you are creating your first will, updating a trust, preparing powers of attorney, or handling the probate process after a loss, Queen Anne Law provides straightforward legal guidance in Queen Anne Seattle.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Wills & Basic Estate Plans</h3>
+            <p>Create or update a will, designate beneficiaries, and put core planning documents in place to protect your wishes and your family.</p>
+          </article>
+          <article class="card">
+            <h3>Trusts & Advanced Planning</h3>
+            <p>Build trust-based estate plans designed to simplify administration, support long-term goals, and help preserve assets, including estate plans that address taxable estates.</p>
+          </article>
+          <article class="card">
+            <h3>Probate, Estate, and Trust Administration</h3>
+            <p>Get practical support for probate filings, estate administration, trust administration, and the legal steps that follow the death of a loved one.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="why-queen-anne">
+      <div class="container split">
+        <div class="card">
+          <span class="eyebrow">What we help with</span>
+          <h2>Common matters we handle</h2>
+          <ul class="checklist">
+            <li>Wills and revocable living trusts</li>
+            <li>Powers of attorney and advance directives</li>
+            <li>Probate and estate administration</li>
+            <li>Trust funding and plan updates</li>
+            <li>Planning for children, partners, and aging parents</li>
+            <li>Reviewing older estate plans to reflect current goals</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="eyebrow">Why clients choose Queen Anne Law</span>
+          <h2>Clear advice. Thoughtful planning. Local perspective.</h2>
+          <p class="section-intro" style="margin-bottom: 0.8rem;">
+            Estate planning is personal. The goal is not just paperwork. It is to create a workable plan that reflects your priorities and gives your family clarity when it matters most.
+          </p>
+          <p style="margin:0; color: var(--muted);">
+            If you are searching for a wills lawyer, probate attorney, or trusts and estates guidance in Queen Anne Seattle, this page is designed to make the next step simple: start with a focused one-hour initial consultation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section consultation" id="consultation">
+      <div class="container consult-grid">
+        <div class="portrait">
+          <img src="assets/images/ruth-headshot.jpg" alt="Attorney headshot for Queen Anne Law consultation section" />
+        </div>
+        <div>
+          <span class="eyebrow">Book an initial consultation</span>
+          <h2>A one-hour meeting to begin building a concrete estate plan.</h2>
+          <p class="section-intro" style="margin-bottom: 0.7rem;">
+            This consultation is the first step for clients seeking estate planning, probate, wills, trusts, and related services in Queen Anne Seattle.
+          </p>
+
+          <div class="price-box" aria-label="Consultation pricing">
+            <span class="price">$225</span>
+            <span>for 1 hour</span>
+            <span class="strike">$450 standard hourly rate</span>
+          </div>
+
+          <div style="margin-top:1rem; padding:0.9rem 1rem; border:1px solid var(--line); border-radius:14px; background:rgba(91,74,124,0.05);">
+            <strong>Home Visit Available</strong><br />
+            For clients in Queen Anne, Seattle, Ruth offers the option to conduct your initial consultation in your home.
+          </div>
+
+          <p style="color: var(--muted); margin-top: 0;">
+            During this one-hour meeting, you can discuss your goals, family situation, existing documents, and the next steps toward a tailored estate plan or probate strategy.
+            <br /><br /><strong>For clients in Queen Anne, Seattle, Ruth offers the option of a home visit for this initial consultation</strong>, providing a convenient and comfortable setting to begin the planning process.
+          </p>
+
+          <form name="consultation-request" method="post" action="#">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" />
+            </div>
+            <div>
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" />
+            </div>
+            <div>
+              <label for="phone">Phone number</label>
+              <input id="phone" name="phone" type="tel" placeholder="(206) 555-0123" />
+            </div>
+            <div>
+              <label for="service">What do you need help with?</label>
+              <input id="service" name="service" type="text" placeholder="Will, trust, probate, or related matter" />
+            </div>
+            <div class="full">
+              <label for="details">Brief details</label>
+              <textarea id="details" name="details" placeholder="Tell us a little about your situation and the best times to reach you."></textarea>
+            </div>
+            <div class="full">
+              <button type="submit" class="btn btn-primary">Request Initial Consultation</button>
+              <div class="form-note">
+                This form is a front-end placeholder and can be connected to your preferred intake tool, email service, or scheduling platform.
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <strong>Queen Anne Law</strong><br />
+        Estate Planning & Probate in Queen Anne Seattle
+      </div>
+      <div>
+        Wills • Trusts • Estates • Probate
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
