@@ -516,9 +516,10 @@
             <p class="form-note" style="margin-top: 0; font-size: 0.95rem;">
               Send a brief note and Ruth can follow up to discuss next steps.
             </p>
-            <form id="consult-form" name="consultation-request" method="POST" action="https://formsubmit.co/ruthapahidean@gmail.com">
+            <form name="consultation-request" method="POST" action="https://formsubmit.co/ruthapahidean@gmail.com">
               <input type="hidden" name="_subject" value="New Queen Anne Law consultation request" />
               <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
               <div>
                 <label for="name">Full name</label>
                 <input id="name" name="name" type="text" placeholder="Your name" required />
@@ -536,14 +537,8 @@
                 <textarea id="details" name="details" placeholder="Tell Ruth a little about your situation and the best way to reach you."></textarea>
               </div>
               <div class="full">
-                <button id="consult-submit" type="submit" class="btn btn-primary">Send Consultation Request</button>
+                <button type="submit" class="btn btn-primary">Send Consultation Request</button>
               </div>
-              <p id="form-success" style="display:none; margin-top:1rem; padding:1rem; border-radius:10px; background:#eef7f0; border:1px solid #cfe8d6; color:#2f6b3f; font-weight:500;">
-                ✓ Your request has been sent. Ruth will follow up shortly.
-              </p>
-              <p id="form-error" style="display:none; margin-top:1rem; padding:1rem; border-radius:10px; background:#fbefef; border:1px solid #e8cfcf; color:#8a2d2d; font-weight:500;">
-                Something went wrong. Please try again.
-              </p>
             </form>
           </div>
         </div>
@@ -565,50 +560,8 @@
       </div>
     </div>
   </footer>
-  
   <script>
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
-
-    const consultForm = document.getElementById('consult-form');
-    const submitButton = document.getElementById('consult-submit');
-    const successMessage = document.getElementById('form-success');
-    const errorMessage = document.getElementById('form-error');
-
-    consultForm.addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      successMessage.style.display = 'none';
-      errorMessage.style.display = 'none';
-
-      const originalText = submitButton.textContent;
-      submitButton.disabled = true;
-      submitButton.textContent = 'Sending...';
-
-      try {
-        const formData = new FormData(consultForm);
-        const response = await fetch('https://formsubmit.co/ajax/ruthapahidean@gmail.com', {
-          method: 'POST',
-          headers: {
-            'Accept': 'application/json'
-          },
-          body: formData
-        });
-
-        if (!response.ok) {
-          throw new Error('Submission failed');
-        }
-
-        consultForm.reset();
-        successMessage.style.display = 'block';
-        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } catch (error) {
-        errorMessage.style.display = 'block';
-        errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = originalText;
-      }
-    });
   </script>
 </body>
 </html>
