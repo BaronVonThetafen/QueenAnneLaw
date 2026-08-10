@@ -395,7 +395,16 @@
     "description": "A Queen Anne Law overview of estate planning for digital assets, Bitcoin, online accounts, and fiduciary access under Washington law.",
     "mainEntityOfPage": "https://queenannelaw.com/blog/digital-assets-estate-planning-seattle.html"
   }
-  </script>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1F2EVQRYPB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1F2EVQRYPB');
+gtag('config', 'AW-725841277');
+</script>
 </head>
 <body>
 <header>
@@ -621,21 +630,27 @@
           body: formData
         });
 
-        if (!response.ok) {
-          throw new Error('Submission failed');
-        }
+       if (!response.ok) {
+  throw new Error('Submission failed');
+}
 
-        consultForm.reset();
-        successMessage.style.display = 'block';
-        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } catch (error) {
-        errorMessage.style.display = 'block';
-        errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } finally {
-        submitButton.disabled = false;
-        submitButton.textContent = originalText;
-      }
-    });
+consultForm.reset();
+successMessage.style.display = 'block';
+successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+// Google Ads conversion - successful form submission
+gtag('event', 'conversion', {
+  'send_to': 'AW-725841277/QlfiCKCEnt0cEP3qjdoC'
+});
+
+} catch (error) {
+  errorMessage.style.display = 'block';
+  errorMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+} finally {
+  submitButton.disabled = false;
+  submitButton.textContent = originalText;
+}
+});
   </script>
 </body>
 </html>
