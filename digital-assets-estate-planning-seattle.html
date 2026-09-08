@@ -652,5 +652,17 @@ gtag('event', 'conversion', {
 }
 });
   </script>
+
+  <!-- Google Ads conversion tracking for completed Calendly bookings -->
+  <script>
+    window.addEventListener('message', function(e) {
+      if (e.data && e.data.event === 'calendly.event_scheduled') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-725841277/QlfiCKCEnt0cEP3qjdoC'
+        });
+      }
+    });
+  </script>
+
 </body>
 </html>
