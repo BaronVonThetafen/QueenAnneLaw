@@ -227,6 +227,12 @@
     }
     .checklist li + li { margin-top: 0.45rem; }
 
+    .why-profile { display:grid; grid-template-columns:320px 1fr; gap:1.5rem; align-items:start; margin:1.75rem 0; }
+    .why-profile .portrait img { aspect-ratio:4 / 5; object-fit:cover; }
+    .why-bio { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:1.5rem; box-shadow:0 6px 20px rgba(21,18,14,.04); }
+    .why-bio h3 { margin-top:0; }
+    .why-bio p { color:var(--muted); }
+    .why-bio p:last-child { margin-bottom:0; }
     .consultation {
       background: linear-gradient(180deg, rgba(255,253,250,0.85), rgba(255,253,250,1));
       border-top: 1px solid var(--line);
@@ -318,7 +324,7 @@
     }
 
     @media (max-width: 980px) {
-      .hero-grid, .consult-grid, .split, .cards {
+      .hero-grid, .consult-grid, .split, .cards, .why-profile {
         grid-template-columns: 1fr;
       }
       .hero-card img {
@@ -476,6 +482,17 @@
       Estate planning is personal. The goal is not just paperwork. It is to create a workable plan that reflects your priorities, protects your loved ones, and gives your family clarity when it matters most.
     </p>
 
+    <div class="why-profile">
+      <div class="portrait"><img src="assets/images/ruth-headshot.jpg" alt="Attorney Ruth Apahidean West of Queen Anne Law" /></div>
+      <div class="why-bio">
+        <span class="eyebrow">Meet Ruth</span>
+        <h3>Practical guidance, explained in plain English.</h3>
+        <p>Ruth Apahidean West is an estate planning and probate attorney in Seattle who helps individuals and families with estate planning, probate, trusts, elder law, and special needs planning. Her approach is practical: she explains complicated issues in plain English and finds solutions that work in the real world.</p>
+        <p>Ruth is also a mother and the daughter of Romanian immigrants. She speaks Romanian and has deep family roots in Transylvania. Her family is from the city where Vlad Țepeș, better known as Dracula, was born. Apparently, dealing with death, estates, and the occasional castle is in her roots.</p>
+        <p>Ruth jokes that she does not particularly like seeing her dentist, doctor, or lawyer either. So while she may not make clients look forward to calling an attorney, she will try to make them glad they did.</p>
+      </div>
+    </div>
+
     <div class="cards">
 
       <div class="card">
@@ -512,10 +529,7 @@
 </section>
 
     <section class="section consultation" id="consultation">
-      <div class="container consult-grid">
-        <div class="portrait">
-          <img src="assets/images/ruth-headshot.jpg" alt="Attorney headshot for Queen Anne Law consultation section" />
-        </div>
+      <div class="container consult-grid" style="grid-template-columns: 1fr; max-width: 920px;">
         <div>
           <span class="eyebrow">Book an initial consultation</span>
           <h2>A one-hour meeting to begin building a concrete estate plan.</h2>
